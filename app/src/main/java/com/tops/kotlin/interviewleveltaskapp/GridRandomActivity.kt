@@ -17,6 +17,10 @@ class GridRandomActivity : AppCompatActivity() {
         binding.btnSubmit.setOnClickListener {
             submitNumber()
         }
+
+        binding.btnGoToNext.setOnClickListener {
+            startActivity(Intent(this, DropDownActivity::class.java))
+        }
     }
 
     private fun submitNumber() {
